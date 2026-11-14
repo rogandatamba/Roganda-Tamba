@@ -1,12 +1,166 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kelas Bu Sari</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Belajar Bangun Ruang Kelas IX</title>
+<style>
+:root{--navy:#17324d;--blue:#2463a6;--sky:#eaf4ff;--gold:#f4b942;--ink:#243447;--muted:#607286;--paper:#f5f8fc;--green:#16845b;--red:#c43d4d}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 "Segoe UI",Arial,sans-serif}
+header{background:linear-gradient(125deg,#17324d,#2463a6);color:white;padding:42px 20px;text-align:center}
+header h1{font-size:clamp(28px,5vw,44px);margin:0 0 8px}header p{max-width:760px;margin:auto;color:#e5f1ff}
+nav{position:sticky;top:0;background:white;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding:10px;box-shadow:0 2px 10px #17324d18;z-index:5}
+nav a{color:var(--blue);text-decoration:none;font-weight:700;padding:7px 12px;border-radius:20px}nav a:hover{background:var(--sky)}
+main{max-width:1050px;margin:26px auto;padding:0 16px}.intro,.panel,.shape{background:white;border-radius:16px;padding:22px;margin:18px 0;box-shadow:0 5px 20px #17324d0c}
+h2{color:var(--navy);margin-top:0;border-bottom:3px solid var(--gold);padding-bottom:8px}h3{color:var(--blue);margin-bottom:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:15px}
+.shape{margin:0;border:1px solid #e4edf6}.shape p{margin:7px 0}.formula{background:var(--sky);padding:10px 13px;border-radius:9px;font-weight:700;color:#174b7e}
+.diagram{height:125px;display:flex;align-items:center;justify-content:center;background:#f7fbff;border-radius:10px;margin-bottom:12px}
+svg{max-width:100%;height:115px}.note{border-left:4px solid var(--gold);padding:10px 14px;background:#fff9e9;border-radius:5px}
+table{width:100%;border-collapse:collapse;margin:12px 0}th,td{border:1px solid #dbe5ef;padding:10px;text-align:left}th{background:var(--sky);color:var(--navy)}
+.quiz-question{border:1px solid #dce7f2;border-radius:12px;padding:16px;margin:14px 0}.quiz-question p{font-weight:700;margin:0 0 10px}
+label.option{display:block;padding:7px 9px;margin:5px 0;border-radius:8px;cursor:pointer}label.option:hover{background:#f0f6fc}
+button{border:0;background:var(--blue);color:white;padding:12px 20px;border-radius:9px;font-weight:700;cursor:pointer;font-size:15px}button:hover{background:var(--navy)}
+#result{font-weight:700;margin-top:15px;padding:14px;border-radius:10px;display:none}.correct{color:var(--green)}.wrong{color:var(--red)}
+footer{text-align:center;padding:25px;color:var(--muted)}
+@media(max-width:600px){main{padding:0 11px}.intro,.panel{padding:16px}table{font-size:14px}}
+</style>
 </head>
 <body>
-  <h1>Selamat datang!</h1>
-  <p>Website kelas Fisika.</p>
+<header>
+  <h1>Petualangan Bangun Ruang</h1>
+  <p>Matematika SMP Kelas IX — pahami unsur, luas permukaan, dan volume melalui ringkasan materi, contoh, serta kuis interaktif.</p>
+</header>
+<nav>
+  <a href="#konsep">Konsep</a><a href="#rumus">Rumus</a><a href="#contoh">Contoh</a><a href="#kuis">Kuis</a>
+</nav>
+<main>
+<section class="intro" id="konsep">
+<h2>1. Apa itu bangun ruang?</h2>
+<p>Bangun ruang adalah bangun tiga dimensi yang memiliki panjang, lebar, dan tinggi. Bangun ruang menempati ruang serta mempunyai volume. Permukaan bangun ruang dapat dihitung luasnya.</p>
+<p><b>Unsur penting:</b> sisi adalah bidang pembatas; rusuk adalah pertemuan dua sisi; titik sudut adalah pertemuan beberapa rusuk. Bangun ruang sisi lengkung memiliki unsur seperti alas, selimut, jari-jari, dan tinggi.</p>
+<div class="note"><b>Ingat!</b> Luas permukaan menggunakan satuan persegi (cm², m²), sedangkan volume menggunakan satuan kubik (cm³, m³).</div>
+</section>
+
+<section id="rumus" class="panel">
+<h2>2. Mengenal bangun ruang dan rumusnya</h2>
+<div class="grid">
+<article class="shape">
+<div class="diagram"><svg viewBox="0 0 180 120" aria-label="Kubus"><path d="M45 38 L105 38 L140 58 L80 58 Z M45 38 L45 92 L80 112 L80 58 M80 112 L140 92 L140 58 M105 38 L105 92 L140 112" fill="#d7ebff" stroke="#2463a6" stroke-width="2.5"/><path d="M45 92 L105 92 L140 112" fill="none" stroke="#2463a6" stroke-width="2.5"/></svg></div>
+<h3>Kubus</h3><p>Memiliki 6 sisi persegi yang sama besar, 12 rusuk sama panjang, dan 8 titik sudut.</p>
+<div class="formula">Volume: V = s³<br>Luas permukaan: LP = 6s²</div>
+</article>
+<article class="shape">
+<div class="diagram"><svg viewBox="0 0 180 120" aria-label="Balok"><path d="M30 42 L105 42 L145 62 L70 62 Z M30 42 L30 88 L70 108 L70 62 M70 108 L145 88 L145 62 M105 42 L105 88 L145 108" fill="#dff4ed" stroke="#16845b" stroke-width="2.5"/></svg></div>
+<h3>Balok</h3><p>Memiliki 6 sisi berbentuk persegi panjang, 12 rusuk, dan 8 titik sudut.</p>
+<div class="formula">Volume: V = p × l × t<br>LP = 2(pl + pt + lt)</div>
+</article>
+<article class="shape">
+<div class="diagram"><svg viewBox="0 0 180 120" aria-label="Prisma segitiga"><path d="M35 82 L65 28 L95 82 Z M85 98 L115 44 L145 98 Z M35 82 L85 98 M65 28 L115 44 M95 82 L145 98" fill="#fff0cc" stroke="#b77a10" stroke-width="2.5"/></svg></div>
+<h3>Prisma</h3><p>Memiliki dua alas kongruen dan sejajar. Sisi tegaknya berbentuk persegi panjang pada prisma tegak.</p>
+<div class="formula">Volume: V = L<sub>alas</sub> × t<br>LP = 2L<sub>alas</sub> + K<sub>alas</sub> × t</div>
+</article>
+<article class="shape">
+<div class="diagram"><svg viewBox="0 0 180 120" aria-label="Limas segiempat"><path d="M90 15 L35 90 L90 108 L145 90 Z M90 15 L90 108 M90 15 L35 90 M90 15 L145 90" fill="#f3e6ff" stroke="#8652ad" stroke-width="2.5"/></svg></div>
+<h3>Limas</h3><p>Memiliki satu alas dan sisi-sisi tegak berbentuk segitiga yang bertemu pada satu titik puncak.</p>
+<div class="formula">Volume: V = ⅓ × L<sub>alas</sub> × t<br>LP = L<sub>alas</sub> + jumlah luas sisi tegak</div>
+</article>
+<article class="shape">
+<div class="diagram"><svg viewBox="0 0 180 120" aria-label="Tabung"><ellipse cx="90" cy="25" rx="43" ry="13" fill="#d7ebff" stroke="#2463a6" stroke-width="2.5"/><path d="M47 25 V94 M133 25 V94" stroke="#2463a6" stroke-width="2.5" fill="none"/><path d="M47 94 A43 13 0 0 0 133 94" fill="none" stroke="#2463a6" stroke-width="2.5"/><path d="M47 94 A43 13 0 0 1 133 94" fill="none" stroke="#2463a6" stroke-width="2.5" stroke-dasharray="4 4"/></svg></div>
+<h3>Tabung</h3><p>Memiliki dua lingkaran sejajar dan sama besar sebagai alas dan tutup, serta satu selimut lengkung.</p>
+<div class="formula">Volume: V = πr²t<br>LP = 2πr(r + t)</div>
+</article>
+<article class="shape">
+<div class="diagram"><svg viewBox="0 0 180 120" aria-label="Kerucut"><ellipse cx="90" cy="96" rx="48" ry="13" fill="#fff0cc" stroke="#b77a10" stroke-width="2.5"/><path d="M90 15 L42 96 M90 15 L138 96" stroke="#b77a10" stroke-width="2.5" fill="none"/><path d="M42 96 A48 13 0 0 0 138 96" stroke="#b77a10" stroke-width="2.5" fill="none"/></svg></div>
+<h3>Kerucut</h3><p>Memiliki alas lingkaran dan satu titik puncak. Garis pelukis dilambangkan dengan s.</p>
+<div class="formula">Volume: V = ⅓πr²t<br>LP = πr(r + s)</div>
+</article>
+<article class="shape">
+<div class="diagram"><svg viewBox="0 0 180 120" aria-label="Bola"><circle cx="90" cy="60" r="43" fill="#e4e8ff" stroke="#5965b5" stroke-width="2.5"/><ellipse cx="90" cy="60" rx="43" ry="15" fill="none" stroke="#5965b5" stroke-width="2" stroke-dasharray="5 4"/><path d="M90 17 A43 43 0 0 1 90 103" fill="none" stroke="#5965b5" stroke-width="2"/></svg></div>
+<h3>Bola</h3><p>Memiliki satu sisi lengkung dan tidak memiliki rusuk maupun titik sudut.</p>
+<div class="formula">Volume: V = ⁴⁄₃πr³<br>LP = 4πr²</div>
+</article>
+</div>
+<p class="note">Keterangan: s = panjang rusuk kubus atau garis pelukis kerucut (sesuai konteks); p = panjang, l = lebar, t = tinggi, r = jari-jari, π ≈ 3,14 atau 22/7.</p>
+</section>
+
+<section id="contoh" class="panel">
+<h2>3. Contoh soal dan pembahasan</h2>
+<h3>Contoh 1 — Volume kubus</h3>
+<p>Sebuah kubus memiliki panjang rusuk 6 cm. Volumenya adalah:</p>
+<p>V = s³ = 6³ = <b>216 cm³</b>.</p>
+<h3>Contoh 2 — Luas permukaan balok</h3>
+<p>Balok berukuran panjang 8 cm, lebar 5 cm, dan tinggi 4 cm.</p>
+<p>LP = 2(pl + pt + lt) = 2(40 + 32 + 20) = <b>184 cm²</b>.</p>
+<h3>Contoh 3 — Volume tabung</h3>
+<p>Tabung berjari-jari 7 cm dan tinggi 10 cm. Gunakan π = 22/7.</p>
+<p>V = πr²t = 22/7 × 7² × 10 = <b>1.540 cm³</b>.</p>
+</section>
+
+<section class="panel">
+<h2>4. Strategi menyelesaikan soal</h2>
+<ol>
+<li>Kenali bentuk bangun ruang dan informasi yang diketahui.</li>
+<li>Tentukan apa yang ditanyakan: luas permukaan atau volume.</li>
+<li>Pilih rumus yang sesuai dan samakan satuan ukuran.</li>
+<li>Substitusikan nilai dengan teliti, termasuk tanda kurung dan pangkat.</li>
+<li>Tuliskan jawaban dengan satuan yang benar.</li>
+</ol>
+</section>
+
+<section id="kuis" class="panel">
+<h2>5. Kuis interaktif: Uji Ketelitianmu!</h2>
+<p>Pilih satu jawaban untuk setiap soal, lalu tekan tombol <b>Periksa Jawaban</b>. Skor akan muncul setelah semua jawaban diperiksa.</p>
+<form id="quizForm">
+<div class="quiz-question"><p>1. Sebuah kubus memiliki rusuk 5 cm. Volume kubus tersebut adalah ...</p>
+<label class="option"><input type="radio" name="q1" value="A"> 25 cm³</label><label class="option"><input type="radio" name="q1" value="B"> 75 cm³</label><label class="option"><input type="radio" name="q1" value="C"> 125 cm³</label><label class="option"><input type="radio" name="q1" value="D"> 150 cm³</label></div>
+<div class="quiz-question"><p>2. Balok berukuran 10 cm × 6 cm × 4 cm. Volumenya adalah ...</p>
+<label class="option"><input type="radio" name="q2" value="A"> 120 cm³</label><label class="option"><input type="radio" name="q2" value="B"> 240 cm³</label><label class="option"><input type="radio" name="q2" value="C"> 400 cm³</label><label class="option"><input type="radio" name="q2" value="D"> 480 cm³</label></div>
+<div class="quiz-question"><p>3. Rumus volume prisma adalah ...</p>
+<label class="option"><input type="radio" name="q3" value="A"> Luas alas × tinggi</label><label class="option"><input type="radio" name="q3" value="B"> ½ × luas alas × tinggi</label><label class="option"><input type="radio" name="q3" value="C"> Keliling alas × tinggi</label><label class="option"><input type="radio" name="q3" value="D"> ⅓ × luas alas × tinggi</label></div>
+<div class="quiz-question"><p>4. Sebuah limas memiliki luas alas 36 cm² dan tinggi 9 cm. Volumenya adalah ...</p>
+<label class="option"><input type="radio" name="q4" value="A"> 108 cm³</label><label class="option"><input type="radio" name="q4" value="B"> 216 cm³</label><label class="option"><input type="radio" name="q4" value="C"> 324 cm³</label><label class="option"><input type="radio" name="q4" value="D"> 972 cm³</label></div>
+<div class="quiz-question"><p>5. Tabung berjari-jari 7 cm dan tinggi 8 cm. Jika π = 22/7, volumenya ...</p>
+<label class="option"><input type="radio" name="q5" value="A"> 616 cm³</label><label class="option"><input type="radio" name="q5" value="B"> 1.232 cm³</label><label class="option"><input type="radio" name="q5" value="C"> 1.540 cm³</label><label class="option"><input type="radio" name="q5" value="D"> 3.080 cm³</label></div>
+<div class="quiz-question"><p>6. Sebuah kerucut memiliki jari-jari 3 cm dan tinggi 4 cm. Volumenya (gunakan π = 3,14) adalah ...</p>
+<label class="option"><input type="radio" name="q6" value="A"> 12,56 cm³</label><label class="option"><input type="radio" name="q6" value="B"> 28,26 cm³</label><label class="option"><input type="radio" name="q6" value="C"> 37,68 cm³</label><label class="option"><input type="radio" name="q6" value="D"> 113,04 cm³</label></div>
+<div class="quiz-question"><p>7. Bangun ruang yang tidak memiliki titik sudut adalah ...</p>
+<label class="option"><input type="radio" name="q7" value="A"> Kubus</label><label class="option"><input type="radio" name="q7" value="B"> Limas</label><label class="option"><input type="radio" name="q7" value="C"> Bola</label><label class="option"><input type="radio" name="q7" value="D"> Prisma segitiga</label></div>
+<div class="quiz-question"><p>8. Luas permukaan kubus dengan rusuk 4 cm adalah ...</p>
+<label class="option"><input type="radio" name="q8" value="A"> 64 cm²</label><label class="option"><input type="radio" name="q8" value="B"> 80 cm²</label><label class="option"><input type="radio" name="q8" value="C"> 96 cm²</label><label class="option"><input type="radio" name="q8" value="D"> 128 cm²</label></div>
+<div class="quiz-question"><p>9. Jika jari-jari bola menjadi 2 kali semula, volumenya menjadi ... kali volume awal.</p>
+<label class="option"><input type="radio" name="q9" value="A"> 2</label><label class="option"><input type="radio" name="q9" value="B"> 4</label><label class="option"><input type="radio" name="q9" value="C"> 6</label><label class="option"><input type="radio" name="q9" value="D"> 8</label></div>
+<div class="quiz-question"><p>10. Sebuah tabung dan kerucut memiliki jari-jari alas serta tinggi yang sama. Perbandingan volume tabung : volume kerucut adalah ...</p>
+<label class="option"><input type="radio" name="q10" value="A"> 1 : 3</label><label class="option"><input type="radio" name="q10" value="B"> 2 : 3</label><label class="option"><input type="radio" name="q10" value="C"> 3 : 1</label><label class="option"><input type="radio" name="q10" value="D"> 3 : 2</label></div>
+<button type="button" onclick="checkQuiz()">Periksa Jawaban</button>
+<button type="reset" onclick="resetResult()" style="background:#607286;margin-left:7px">Ulangi Kuis</button>
+<div id="result" aria-live="polite"></div>
+</form>
+</section>
+<footer>Media belajar Matematika SMP Kelas IX • Bangun Ruang</footer>
+</main>
+<script>
+const keys={q1:"C",q2:"D",q3:"A",q4:"A",q5:"B",q6:"B",q7:"C",q8:"C",q9:"D",q10:"C"};
+const explanations={
+q1:"5³ = 125 cm³.",q2:"10 × 6 × 4 = 240 cm³.",q3:"Volume prisma = luas alas × tinggi.",
+q4:"⅓ × 36 × 9 = 108 cm³.",q5:"(22/7) × 7² × 8 = 1.232 cm³.",
+q6:"⅓ × 3,14 × 3² × 4 = 37,68 cm³.",q7:"Bola tidak memiliki titik sudut.",
+q8:"6 × 4² = 96 cm².",q9:"Volume bola sebanding dengan r³, sehingga 2³ = 8 kali.",
+q10:"Volume tabung = πr²t dan kerucut = ⅓πr²t, jadi 3 : 1."
+};
+function checkQuiz(){
+ let score=0,answered=0,details=[];
+ for(let i=1;i<=10;i++){
+  const name="q"+i,chosen=document.querySelector('input[name="'+name+'"]:checked');
+  if(chosen)answered++;
+  if(chosen&&chosen.value===keys[name])score++;
+  details.push("Soal "+i+": "+(chosen&&chosen.value===keys[name]?"Benar":"Belum tepat")+" — "+explanations[name]);
+ }
+ const box=document.getElementById("result");box.style.display="block";
+ box.innerHTML="<div>Skor: "+score*10+"/100 ("+score+" dari 10 benar). Terjawab: "+answered+"/10.</div><p>"+(score>=8?"Hebat! Pemahamanmu sudah sangat baik.":score>=6?"Bagus! Pelajari kembali soal yang belum tepat.":"Tetap semangat! Baca ringkasan rumus, lalu coba lagi.")+"</p><hr>"+details.map(x=>"<div>"+x+"</div>").join("");
+ box.scrollIntoView({behavior:"smooth",block:"center"});
+}
+function resetResult(){const box=document.getElementById("result");box.style.display="none";box.innerHTML="";}
+</script>
 </body>
 </html>
